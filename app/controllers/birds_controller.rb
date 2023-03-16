@@ -33,6 +33,7 @@ class BirdsController < ApplicationController
     end
   end
 
+  # CUSTOM ROUTE
   def increment_likes
     bird = Bird.find_by(id: params[:id])
     if bird
